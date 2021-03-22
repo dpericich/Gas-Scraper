@@ -25,6 +25,20 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+
+## Charting gems
+# Create beautiful JavaScript charts with one line of Ruby
+gem "chartkick"
+
+# The simple way to group dates
+gem "groupdate"
+
+## Webscraping gems
+# API for reading, writing, modifying and querying HTML and XML documents
+gem 'nokogiri'
+
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
