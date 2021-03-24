@@ -10,6 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_22_221524) do
+ActiveRecord::Schema.define(version: 2021_03_24_033221) do
+
+  create_table "gas_stations", force: :cascade do |t|
+    t.string "name"
+    t.string "address_1"
+    t.string "city"
+    t.string "state"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "prices", force: :cascade do |t|
+    t.string "name"
+    t.string "state"
+    t.datetime "date"
+    t.float "price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end
